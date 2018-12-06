@@ -1,4 +1,4 @@
-const database = require('./database-connection')
+const db = require('./database-connection')
 
 
 module.exports = {
@@ -7,6 +7,6 @@ module.exports = {
     },
     getById(id) {
         return db('movie_list').where('id', id)
-    }, 
+    }
   
 }

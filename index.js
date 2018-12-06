@@ -9,11 +9,11 @@ app.use(cors())
 
 
 app.get('/', (req, res) => {
-    queries.listAll().then(food => res.send(food)) 
+    queries.listAll().then(movie => res.send(movie)) 
 })
 
 app.get('/:id', (req, res) => {
-    queries.getById(req.params.id).then(food => res.send(food))
+    queries.getById(req.params.id).then(movie => res.send(movie))
 })
 
 
