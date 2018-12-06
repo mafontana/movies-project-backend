@@ -16,7 +16,17 @@ app.get('/:id', (req, res) => {
     queries.getById(req.params.id).then(movie => res.send(movie))
 })
 
+app.post('/', (req, res) => {
+    queries.createMovie(req.body).then(movies => res.send(movies))
+})
 
+app.delete('/:id', (req, res) => {
+    queries.deleteMovie(request.params.id).then(res.sendStatus(204))
+})
+
+app.put("/:id", (req, res) => {
+    queries.updateMovie(req.params.id, req.body).then(updatedMovie => res.json(updatedMovie[0])).returning('*')
+})
 
 
 
