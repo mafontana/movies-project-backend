@@ -1,19 +1,12 @@
+const database = require('./database-connection')
+
+
 module.exports = {
     listAll(){
-        return db('students')
+        return db('movie_list')
     },
     getById(id) {
-        return db('students').where('id', id)
+        return db('movie_list').where('id', id)
     }, 
-    createStudent(newStudent) {
-        return db('students').insert(newStudent).returning('*')
-    },
-    deleteStudent(id){
-        return db('students')
-            .where('id', id)
-            .delete()
-    },
-    updateStudent(id, student) {
-        return db('students').where('id', id).update(student)
-    }
+  
 }
