@@ -62,7 +62,7 @@ exports.seed = function(knex, Promise) {
           poster_url: "http://www.gstatic.com/tv/thumb/v22vodart/14551155/p14551155_v_v8_ab.jpg"
         },
         {
-          title: "Baltos", 
+          title: "Balto", 
           director: "Simon Wells", 
           year: "1995",
           my_rating: 4.3,
