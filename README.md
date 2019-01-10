@@ -32,4 +32,4 @@ Software necessary to install to run the server:
 
 ## Author
 
-* **Meredith Fontana** - *Initial work* - [mafontana](https://github.com/mafontana)
+* **Meredith Fontana** [mafontana](https://github.com/mafontana)
